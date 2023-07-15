@@ -11,8 +11,8 @@ class App extends StatelessWidget {
       theme: ThemeData.dark(),
       initialRoute: "/",
       routes: {
-        "/": (context) => CoinListScreen(),
-        "/coin": (context) => CoinScreem(),
+        "/": (context) => const CoinListScreen(),
+        "/coin": (context) => const CoinScreem(),
       },
     );
   }
