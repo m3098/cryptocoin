@@ -8,7 +8,12 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark(),
+      theme: ThemeData(
+          brightness: Brightness.dark,
+          primaryColor: Colors.amber,
+          dividerColor: Colors.amber,
+          canvasColor: const Color.fromARGB(255, 14, 14, 14),
+          appBarTheme: const AppBarTheme(backgroundColor: Colors.black)),
       initialRoute: "/",
       routes: {
         "/": (context) => const CoinListScreen(),

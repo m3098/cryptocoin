@@ -7,6 +7,7 @@ class CoinListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: const Text('Crypto Coins')),
       body: ListView.builder(
         itemCount: 100,
         itemBuilder: (BuildContext context, int index) {
