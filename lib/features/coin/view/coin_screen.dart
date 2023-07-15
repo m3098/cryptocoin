@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/widgets.dart';
 
 class CoinScreem extends StatelessWidget {
   const CoinScreem({super.key});
@@ -53,52 +54,6 @@ class CoinScreem extends StatelessWidget {
             ],
           ))
         ]),
-      ),
-    );
-  }
-}
-
-class TextRow extends StatelessWidget {
-  const TextRow({
-    super.key,
-    required this.title,
-    required this.value,
-  });
-
-  final String title;
-  final String value;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(title),
-        Text("$value \$"),
-      ],
-    );
-  }
-}
-
-class TextSection extends StatelessWidget {
-  final Widget child;
-
-  const TextSection({super.key, required this.child});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.0),
-        color: Colors.black,
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Align(
-          alignment: Alignment.center,
-          child: child,
-        ),
       ),
     );
   }
