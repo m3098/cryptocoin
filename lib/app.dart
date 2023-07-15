@@ -6,8 +6,9 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: CoinListScreen(),
+    return MaterialApp(
+      theme: ThemeData.dark(),
+      home: const CoinListScreen(),
     );
   }
 }
