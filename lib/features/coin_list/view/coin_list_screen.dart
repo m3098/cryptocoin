@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/widgets.dart';
 
 class CoinListScreen extends StatelessWidget {
   const CoinListScreen({super.key});
@@ -9,11 +10,7 @@ class CoinListScreen extends StatelessWidget {
       body: ListView.builder(
         itemCount: 100,
         itemBuilder: (BuildContext context, int index) {
-          return const ListTile(
-            title: Text("title"),
-            subtitle: Text("subtitle"),
-            leading: Icon(Icons.monetization_on),
-          );
+          return const CoinListElement();
         },
       ),
     );
