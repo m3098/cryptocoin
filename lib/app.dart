@@ -1,3 +1,4 @@
+import 'package:cryptocoin/features/coin/view/coin_screen.dart';
 import 'package:flutter/material.dart';
 import 'features/features.dart';
 
@@ -8,7 +9,11 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
-      home: const CoinListScreen(),
+      initialRoute: "/",
+      routes: {
+        "/": (context) => CoinListScreen(),
+        "/coin": (context) => CoinScreem(),
+      },
     );
   }
 }
